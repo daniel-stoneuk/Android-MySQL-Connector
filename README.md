@@ -65,7 +65,7 @@ To connect to a MySQL server you first need to create the MySQL Connection objec
 Connection  mysqlConnection = new Connection("<Hostname>", "<Username>", "<Password>", <Port>, "<Database>", new IConnectionInterface()
 ```
 
-In the above example, <database> is an optional parameter. By setting this, when the connection is established, the database name will be the default
+In the above example, database is an optional parameter. By setting this, when the connection is established, the database name will be the default
 database used. The IConnectionInterface parameter handles connection specific events, such as successfully connected or exception handlers.
 
 For example, when creating a new IConnectionInterface, you will need to provide the following methods:
